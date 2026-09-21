@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Constructora ABC - Piso</title>
+        <link rel="icon" href="IMG/logo.png" sizes="32x32">
+        <link rel="icon" href="IMG/logo.png" sizes="16x16">
+        <link rel="stylesheet" href="CSS/default.css">
+        <script src="JS/piso.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="IMG/logo.png" alt="Constructora ABC">
+            <h1>Constructora ABC</h1>
+        </header>
+        <main>
+            <form class="form-login" action="" method="post">
+                <h2>Piso</h2>
+                <label for="Ancho">Ancho (m):</label>
+                <input class="input" type="number" id="Ancho" name="Ancho" placeholder="5.00" step="0.01" required>
+                <label for="Largo">Largo (m):</label>
+                <input class="input" type="number" id="Largo" name="Largo" placeholder="8.00" step="0.01" required>
+                <input class="btn" type="submit" value="Calcular">
+                <div class="resultados" id="resultados">
+                    <h3>Resultados</h3>
+                    <div class="fila-resultado"><span>Superficie:</span><span id="resSuperficie"></span></div>
+                    <div class="fila-resultado"><span>(+10% recortes):</span><span id="resExtra"></span></div>
+                    <div class="fila-resultado"><span>Total:</span><span id="resTotal"></span></div>
+                </div>
+                <p><a href="menu.html">← Volver al menú</a></p>
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora ABC</title>
+    <link rel="icon" href="IMG/logo.png" sizes="32x32">
+    <link rel="icon" href="IMG/logo.png" sizes="16x16">
+    <link rel="stylesheet" href="CSS/default.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="IMG/logo.png" alt="Contrusctora ABC">
+        <h1>Constructora ABC</h1>
+    </header>
+    <main>
+        <form class="form-login" action="" method="post">
+            <h2>Registro de usuario</h2>
+            <label for="Nombre">Nombre:</label>
+            <input class="input" type="text" id="Nombre" name="Nombre" placeholder="Nombre" required>
+            <label for="Apellidos">Apellidos:</label>
+            <input class="input" type="text" id="Apellidos" name="Apellidos" placeholder="Apellidos" required>
+            <label for="Usuario">Usuario:</label>
+            <input class="input" type="text" id="Usuario" name="Usuario" placeholder="Usuario" required>
+            <label for="Correo">Correo electronico:</label>
+            <input class="input" type="email" id="Correo" name="Correo" placeholder="correo@ejemplo.com" required>
+            <label for="Perfil">Perfil:</label>
+            <select class="input" id="Perfil" name="Perfil" required>
+                <option value="">Selecciona un perfil</option>
+                <option value="Administrador">Administrador</option>
+                <option value="Ingeniero">Ingeniero de obra</option>
+                <option value="Operario">Operario</option>
+            </select>
+            <label for="Contrasena">Contraseña:</label>
+            <input class="input" type="password" id="Contrasena" name="Contrasena" placeholder="Contraseña" required>
+            <label for="ConfirmarContrasena">Confirmar Contraseña:</label>
+            <input class="input" type="password" id="ConfirmarContrasena" name="ConfirmarContrasena"
+                placeholder="Confirmar Contraseña" required>
+            <input class="btn" type="submit" value="Registrarse">
+            <p><a href="login.html">¿Ya tienes una cuenta? Inicia sesión</a></p>
+        </form>
+    </main>
+    <script src="JS/registro.js"></script>
+</body>
+</html>

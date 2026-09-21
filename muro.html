@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora ABC</title>
+    <link rel="icon" href="IMG/logo.png" sizes="32x32">
+    <link rel="icon" href="IMG/logo.png" sizes="16x16">
+    <link rel="stylesheet" href="CSS/default.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="IMG/logo.png" alt="Constructora ABC">
+        <h1>Constructora ABC</h1>
+    </header>
+    <main>
+        <form class="form-login" action="" method="post">
+            <h2>Muro de ladrillo</h2>
+            <label for="Espesor">Espesor:</label>
+            <select class="input" id="Espesor" name="Espesor" required>
+                <option value="20">20 cm</option>
+                <option value="30">30 cm</option>
+            </select>
+            <label for="Largo">Largo (m):</label>
+            <input class="input" type="number" id="Largo" name="Largo" placeholder="5.00" step="0.01" required>
+            <label for="Alto">Alto (m):</label>
+            <input class="input" type="number" id="Alto" name="Alto" placeholder="2.50" step="0.01" required>
+            <input class="btn" type="submit" value="Calcular">
+            <div class="resultados" id="resultados">
+                <h3>Resultados</h3>
+                <div class="fila-resultado"><span>Superficie:</span><span id="resSuperficie"></span></div>
+                <div class="fila-resultado"><span>Cemento:</span><span id="resCemento"></span></div>
+                <div class="fila-resultado"><span>Arena:</span><span id="resArena"></span></div>
+                <div class="fila-resultado"><span>Ladrillos:</span><span id="resLadrillos"></span></div>
+</div>
+            <p><a href="menu.html">← Volver al menú</a></p>
+        </form>
+    </main>
+    <script src="JS/muro.js"></script>
+</body>
+</html>

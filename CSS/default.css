@@ -1,0 +1,143 @@
+/* Quita espacios por defecto del navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Fondo oscuro con cuadricula, todo centrado */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0F1A22;
+    color: #EDEDE6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background-image: 
+    linear-gradient(#2A3C48 1PX, transparent 1px),
+    linear-gradient(90deg, #2A3C48 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+/* LOGO */
+.logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+/* TARGETA DEL FORMULARIO */
+.form-login {
+    background-color: #182632;
+    padding: 30px;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 1px solid #2A3C48;
+}
+.form-login h2 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+.form-login label {
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #93A0A8;
+}
+/* Campos de texto */
+.input {
+    padding: 10px 12px;
+    border: 1px solid #2A3C48;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    background-color: #0F1A22;
+    color: #EDEDE6;
+}
+/*Botón Principal */
+.btn {
+    margin-top: 22px;
+    padding: 12px;
+    background-color: #DD7A3B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+.btn:hover {
+    background-color: #C4652A;
+}
+/* Links debajo del formulario */
+.form-login p {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+.form-login a {
+    color: #DD7A3B;
+    text-decoration: none;
+    font-weight: bold;
+}
+.form-login a:hover {
+    text-decoration: underline;
+}
+/* Menu de materiales */
+.menu-materiales {
+    background-color: #182632;
+    padding: 30px;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 360px;
+    margin-top: 20px;
+    border: 1px solid #2A3C48;
+}
+.menu-materiales h2 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+.menu-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu-lista a {
+    display: block;
+    padding: 12px 14px;
+    background-color: #0F1A22;
+    border: 1px solid #2A3C48;
+    border-radius: 8px;
+    color: #EDEDE6;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.menu-lista a:hover {
+    border-color: #DD7A3B;
+    color: #DD7A3B;
+}
+/* Resultados de las calculadoras */
+.resultados {
+    display: none;
+    margin-top: 20px;
+    background-color: #173225;
+    border: 1px solid #2A3C48;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.resultados h3 {
+    font-size: 0.85rem;
+    color: #3F7D58;
+    margin-bottom: 10px;
+}
+
+.fila-resultado {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    padding: 4px 0;
+}
