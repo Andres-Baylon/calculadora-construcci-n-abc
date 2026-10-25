@@ -21,6 +21,24 @@ formulario.addEventListener("submit", function (evento) {
         return;
     }
 
-    alert("Registro exitoso. Ahora puedes iniciar sesión, " + nombre + ".");
-    window.location.href = "login.html";
+    fetch("registro.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nombre, apellidos, usuario, correo, perfil, contrasena })
+    })
+        .then(function (respuesta) {
+            return respuesta.json();
+        })
+        .then(function (resultado) {
+            if (resultado.error) {
+                alert(resultado.error);
+            } else {
+                alert(resultado.mensaje);
+                window.location.href = "login.html";
+            }
+        })
+        .catch(function (error) {
+            alert("Ocurrió un error al conectar con el servidor.");
+            console.error(error);
+        });
 });

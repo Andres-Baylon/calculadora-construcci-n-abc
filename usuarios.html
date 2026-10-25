@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Constructora ABC - Gestión de usuarios</title>
+        <link rel="icon" href="IMG/logo.png" sizes="32x32">
+        <link rel="stylesheet" href="CSS/default.css">
+        <script src="JS/usuarios.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="IMG/logo.png" alt="Constructora ABC">
+            <h1>Constructora ABC</h1>
+        </header>
+        <main>
+            <div class="menu-materiales" style="max-width:600px;">
+                <h2>Gestión de usuarios</h2>
+                <div id="listaUsuarios"></div>
+                <p><a href="menu.html">← Volver al menú</a></p>
+            </div>
+
+            <div class="form-login" id="formEditar" style="display:none; margin-top:20px;">
+                <h2>Editar usuario</h2>
+                <input type="hidden" id="editId">
+                <label for="editNombre">Nombre:</label>
+                <input class="input" type="text" id="editNombre">
+                <label for="editApellidos">Apellidos:</label>
+                <input class="input" type="text" id="editApellidos">
+                <label for="editCorreo">Correo:</label>
+                <input class="input" type="email" id="editCorreo">
+                <label for="editPerfil">Perfil:</label>
+                <select class="input" id="editPerfil">
+                    <option value="Administrador">Administrador</option>
+                    <option value="Ingeniero">Ingeniero de obra</option>
+                    <option value="Operario">Operario</option>
+                </select>
+                <button class="btn" id="btnGuardar">Guardar cambios</button>
+            </div>
+        </main>
+    </body>
+</html>
